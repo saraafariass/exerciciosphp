@@ -1,2 +1,2 @@
 # exerciciosphp
-Lista de Exercícios 1 – Laços de Repetição em PHP, desenvolvido para a disciplina de Programação Web II.
+Lista de Exercícios 1 – Estruturas Condicionais em PHP, desenvolvido para a disciplina de Programação Web II.
