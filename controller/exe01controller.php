@@ -18,8 +18,6 @@
         echo "O valor é impar {$valor}";
     }
 
-
-
     ?>
     
 </body>

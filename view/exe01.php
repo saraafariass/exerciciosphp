@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Verificador de Paridade</h2>
-    <form method="post" action="paridade_controller.php">
+    <form method="post" action="exe01controller.php">
         <div> 
             <label for="numero">Digite um número:</label><br>
             <input type="number" name="numero" required><br>
