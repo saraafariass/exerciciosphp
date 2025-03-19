@@ -8,7 +8,7 @@
 <body>
     <h1>Calculadora de imposto de renda </h1>
 
-    <form method="post" action="exe03controller.php">
+    <form method="post" action="../controller/exe04controller.php">
         <div> 
             <label for="salario">Digite o seu salário:</label><br>
             <input type="number" name="salario" required><br>

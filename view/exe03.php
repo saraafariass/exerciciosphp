@@ -8,9 +8,9 @@
 <body>
     <h1>Classificação etária </h1>
 
-    <form method="post" action="exe03controller.php">
+    <form method="post" action="../controller/exe03controller.php">
         <div> 
-            <label for="preco">Digite a sua idade:</label><br>
+            <label for="idade">Digite a sua idade:</label><br>
             <input type="number" name="idade" required><br>
         </div>
 

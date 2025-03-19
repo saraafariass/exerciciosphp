@@ -16,16 +16,16 @@
         echo "Isento de imposto e sem parcelas";
     } elseif ($salario >= 2259.21 && $salario <= 2828.65) {
         $taxa_imposto = ($salario * 0.075) - 169.44;
-        echo "A taxa de imposto é {$taxa_imposto}";
+        echo "A taxa de imposto é R$ " . number_format($taxa_imposto,2);
     } elseif ($salario >= 2828.66 && $salario <= 3751.05) {
         $taxa_imposto = ($salario * 0.15) - 381.44;
-        echo "A taxa de imposto é {$taxa_imposto}";
+        echo "A taxa de imposto é R$ " . number_format($taxa_imposto,2);
     } elseif ($salario >= 3751.06 && $salario <= 4664.68) {
         $taxa_imposto = ($salario * 0.225) - 662.77;
-        echo "A taxa de imposto é {$taxa_imposto}";
+        echo "A taxa de imposto é R$ " . number_format($taxa_imposto,2);
     } else{
         $taxa_imposto = ($salario * 0.275) - 896.00;
-        echo "A taxa de imposto é {$taxa_imposto}";
+        echo "A taxa de imposto é R$ " . number_format($taxa_imposto,2);
 
     }
 

@@ -15,9 +15,9 @@
     if($preco >  200){
         $desconto = $preco * 0.15;
         $preco_final = $preco - $desconto;
-        echo "Preço com desconto{$preco_final}";
+        echo "Preço com desconto: R$ {$preco_final}";
     } else{
-        echo "Produto sem desconto {$preco_final}";
+        echo "Produto sem desconto: R$ {$preco}";
     }
 
 

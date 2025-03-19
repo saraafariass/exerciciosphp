@@ -49,7 +49,7 @@
 
     echo "Resumo da Reserva:<br>";
     echo "Dias: $dias | Total: R$ " . number_format($preco_total, 2);
-    echo "Desconto: R$ " . number_format($valor_desconto, 2). " | Final: R$ " . number_format($preco_final,2);
+    echo "<br> Desconto: R$ " . number_format($valor_desconto, 2). " | Final: R$ " . number_format($preco_final,2);
 
     ?>
     

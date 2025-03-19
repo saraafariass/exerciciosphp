@@ -7,9 +7,9 @@
 </head>
 <body>
     <h1> Calculadora de Tarifas de Energia </h1>
-    <form method="post" action="exe08controller.php">
+    <form method="post" action="../controller/exe08controller.php">
         <div> 
-            <label for="consumo">Consumo mensal dm kW:</label><br>
+            <label for="consumo">Consumo mensal em kW:</label><br>
             <input type="number" name="consumo" required><br>
         </div>
 

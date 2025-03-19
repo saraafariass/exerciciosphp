@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if (!isset($_SESSION['numeroSorteado'])) {
+        $_SESSION['numeroSorteado'] = rand(1, 100);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,33 +15,25 @@
     <title>Jogo de adivinhação com Dicas</title>
 </head>
 <body>
-    <h1>Calculadora de desconto</h1>
+    <h1>Jogo de Adivinhação</h1>
 
     <?php
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if (isset($_POST['numero'])) {
+                $numero = (int)$_POST['numero'];
+                $numeroSorteado = $_SESSION['numeroSorteado'];
     
-    $numero_secreto = rand(1,100);
-    $limite = 5;
-    $palpite = intval($_GET['palpite']);
-
-    if ($palpite < $numero_secreto){
-        echo "Palpite baixo. Tente novamente";
-    } elseif ($palpite > $numero_secreto) {
-        echo "Palpite alto. Tente novamente";
-    } else{
-        echo "Acertou! Você tentou {$tentativa} vezes";
-
-        $numero_secreto = rand(1,100);
-        $tentativas_usadas = 0; // reinicia
-    }
-
-    if ($tentativas_usadas >= $limite_tentativas && $tentativa != $numero_secreto) {
-        $mensagem = "Limite de tentativas concluídas! O número era $numero_secreto.";
-        // reinicia
-        $numero_secreto = rand(1, 100);
-        $tentativas_usadas = 0;
-    }
-    
-
+                if ($numero == $numeroSorteado) {
+                    echo "Parabéns, você acertou o número!";
+                    unset($_SESSION['numeroSorteado']);
+                } elseif ($numero < $numeroSorteado) {
+                    echo "O número sorteado é maior que o número informado.";
+                } else {
+                    echo "O número sorteado é menor que o número informado.";
+                }
+            }
+        }
     ?>
+
 </body>
 </html>

@@ -13,13 +13,13 @@
     $idade = intval($_REQUEST['idade']);
 
     if($idade >= 0 and $idade <= 11){
-        echo "A idade é {$idade} classe (0-11) - Criança";
+        echo "A idade é {$idade} | Classe (0-11) - Criança";
     } elseif ($idade >= 12 and  $idade <= 18) {
-        echo "A idade é {$idade} classe (12-18) - Adolescente";
+        echo "A idade é {$idade} | Classe (12-18) - Adolescente";
     } elseif ($idade >= 19 and $idade <= 59) {
-        echo "A idade é {$idade} classe (19-59) - Adulto";
+        echo "A idade é {$idade} | Classe (19-59) - Adulto";
     } else{
-        echo "A idade é {$idade} classe (< 59) - Idoso";
+        echo "A idade é {$idade} | Classe (< 59) - Idoso";
     }
 
 

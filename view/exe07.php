@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1> Sistema de Bilhetagem Eletrônica </h1>
-    <form action="exe07controller.php" method = "post">
+    <form action="../controller/exe07controller.php" method = "post">
         <div> 
             <label for="idade">Digite a sua idade:</label><br>
             <input type="number" name="idade" required><br>

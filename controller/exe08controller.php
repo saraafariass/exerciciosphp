@@ -25,7 +25,7 @@
     }
 
 $valor_final = $consumo * $tarifa;
-echo "Total a pagar: R$ " . number_format($valor_final,2);
+echo "<br> Total a pagar: R$ " . number_format($valor_final,2);
 
 ?>
 

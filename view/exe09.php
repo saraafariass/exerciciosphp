@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1> Sistema de Notas Escolares</h1>
-    <form method="post" action="exe09controller.php">
+    <form method="post" action="../controller/exe09controller.php">
         <div> 
             <label for="provas">Nota das provas:</label><br>
             <input type="number" name="provas" required><br>

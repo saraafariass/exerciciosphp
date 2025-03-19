@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Calculadora de desconto</h1>
-    <form method="post" action="exe02controller.php">
+    <form method="post" action="../controller/exe02controller.php">
         <div> 
             <label for="preco">Digite o preço do produto:</label><br>
             <input type="number" name="preco" required><br>

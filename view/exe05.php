@@ -8,7 +8,7 @@
 <body>
     <h1>Sistema de Classificação de Produtos </h1>
     
-    <form method="post" action="exe05controller.php">
+    <form method="post" action="../controller/exe05controller.php">
         <div> 
             <label for="produto">Digite o nome do produto:</label><br>
             <input type="text" name="produto" required><br>

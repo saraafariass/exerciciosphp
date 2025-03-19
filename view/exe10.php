@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
 <body>
     <h1>Reservas de Hotel</h1>
 
-    <form method="post" action="exe10controller.php">
+    <form method="post" action="../controller/exe10controller.php">
 
             <legend>Informe os dados da reserva:</legend>
 
